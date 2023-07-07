@@ -6,10 +6,14 @@ image makeshift_trophy:
     rotate 45
 
 label trophy:
-    p "_" #280 "oh, i know what to use this for!"
+    p "oh, i know what to use this for!" # * 280
     show spraypaint
     show scraptrophy
-    #279 add a quick animation for using the spray paint on the trophy. just moving them around and making the screen flash should be sufficient
+    # TODO: find og coords first before implementing this
+    # * 279
+    # ! xalign 0.5
+    # ! $ flash = Fade(.25, 0, .75, color="#fff")
+    # ! xalign 0.5
     hide spraypaint
     hide scraptrophy
     show makeshift_trophy
@@ -19,4 +23,3 @@ label trophy:
     $ item.makeshift_trophy = True
     hide makeshift_trophy
     return
-    
